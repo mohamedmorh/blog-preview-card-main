@@ -28,11 +28,19 @@ section{
     border: 1px solid var(--color-secondary);
     box-shadow: 9px 9px;
 }
+
+@media (max-width: 768px) {
+    section{
+        width: 327px;
+        height: 500px;
+    }
+}
 img.cover{
     width: 100%;
     height: 200px;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 12px;
+    object-fit: cover;
 }
 footer{
     flex: 1;
@@ -55,18 +63,35 @@ footer span{
 footer time{
     font-size: 16px;
     color: var(--color-secondary);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 0.6;
+}
+@media (max-width: 768px) {
+    footer time{
+        font-size: 14px;
+    }
+}
+footer h2{
+    color: var(--color-secondary);
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    footer h2{
+        font-size: 20px;
+    }
 }
 footer p{
     font-size: 16px;
     color: var(--color-tertiary);
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 20px;
 }
-footer h2{
-    color: var(--color-secondary);
-    font-weight: 800;
+
+@media (max-width: 768px) {
+    footer p{
+        font-size: 14px;
+    }
 }
 footer div{
     display: flex;
@@ -76,6 +101,4 @@ footer div.author img{
     width: 32px;
     height: 32px;
     margin-right: 12px;
-}
-footer div.autor h5{
 }
